@@ -1,0 +1,381 @@
+head, body {
+  background-color: #000000; }
+
+.i-i {
+  display: block;
+  background-image: url("../images/icons.png");
+  width: 42px;
+  height: 42px; }
+  .i-i.g_short_blade {
+    background-position-x: 0px;
+    background-position-y: 0px; }
+  .i-i.g_long_blade {
+    background-position-x: 0px;
+    background-position-y: -42px; }
+  .i-i.g_buster_blade {
+    background-position-x: 0px;
+    background-position-y: -84px; }
+  .i-i.g_boost_hammer {
+    background-position-x: 0px;
+    background-position-y: -126px; }
+  .i-i.g_charge_spear {
+    background-position-x: 0px;
+    background-position-y: -168px; }
+  .i-i.g_variant_scythe {
+    background-position-x: 0px;
+    background-position-y: -210px; }
+  .i-i.g_biting_edge {
+    background-position-x: 0px;
+    background-position-y: -252px; }
+  .i-i.g_heavy_moon {
+    background-position-x: 0px;
+    background-position-y: -294px; }
+  .i-i.g_assault_gun {
+    background-position-x: 0px;
+    background-position-y: -336px; }
+  .i-i.g_sniper_gun {
+    background-position-x: 0px;
+    background-position-y: -378px; }
+  .i-i.g_shotgun {
+    background-position-x: 0px;
+    background-position-y: -420px; }
+  .i-i.g_ray_gun {
+    background-position-x: 0px;
+    background-position-y: -462px; }
+  .i-i.g_buckler {
+    background-position-x: 0px;
+    background-position-y: -504px; }
+  .i-i.g_shield {
+    background-position-x: 0px;
+    background-position-y: -546px; }
+  .i-i.g_tower_shield {
+    background-position-x: 0px;
+    background-position-y: -588px; }
+  .i-i.m_flask {
+    background-position-x: 0px;
+    background-position-y: -630px; }
+  .i-i.m_stone {
+    background-position-x: 0px;
+    background-position-y: -672px; }
+  .i-i.m_skin {
+    background-position-x: 0px;
+    background-position-y: -714px; }
+  .i-i.m_fang {
+    background-position-x: 0px;
+    background-position-y: -756px; }
+  .i-i.m_organ {
+    background-position-x: 0px;
+    background-position-y: -798px; }
+  .i-i.m_shell {
+    background-position-x: 0px;
+    background-position-y: -840px; }
+  .i-i.m_block {
+    background-position-x: 0px;
+    background-position-y: -882px; }
+  .i-i.c_grenade {
+    background-position-x: 0px;
+    background-position-y: -924px; }
+  .i-i.c_heal_hp {
+    background-position-x: -42px;
+    background-position-y: -924px; }
+  .i-i.c_up_hp {
+    background-position-x: -84px;
+    background-position-y: -924px; }
+  .i-i.c_hp_ball {
+    background-position-x: -126px;
+    background-position-y: -924px; }
+  .i-i.c_hp_post {
+    background-position-x: -168px;
+    background-position-y: -924px; }
+  .i-i.c_up_stam {
+    background-position-x: -210px;
+    background-position-y: -924px; }
+  .i-i.c_op_heal {
+    background-position-x: -252px;
+    background-position-y: -924px; }
+  .i-i.c_up_op {
+    background-position-x: 0px;
+    background-position-y: -966px; }
+  .i-i.c_heal_up_all {
+    background-position-x: -42px;
+    background-position-y: -966px; }
+  .i-i.c_anti_venom {
+    background-position-x: -84px;
+    background-position-y: -966px; }
+  .i-i.c_anti_leak {
+    background-position-x: -126px;
+    background-position-y: -966px; }
+  .i-i.c_anti_jamming {
+    background-position-x: -168px;
+    background-position-y: -966px; }
+  .i-i.c_anti_all {
+    background-position-x: -210px;
+    background-position-y: -966px; }
+  .i-i.c_up_atk {
+    background-position-x: -252px;
+    background-position-y: -966px; }
+  .i-i.c_up_def {
+    background-position-x: 0px;
+    background-position-y: -1008px; }
+  .i-i.c_up_aggro {
+    background-position-x: -42px;
+    background-position-y: -1008px; }
+  .i-i.c_down_aggro {
+    background-position-x: -84px;
+    background-position-y: -1008px; }
+  .i-i.c_burst {
+    background-position-x: -126px;
+    background-position-y: -1008px; }
+  .i-i.c_stealth {
+    background-position-x: -168px;
+    background-position-y: -1008px; }
+  .i-i.c_up_blaze {
+    background-position-x: -210px;
+    background-position-y: -1008px; }
+  .i-i.c_up_freeze {
+    background-position-x: -252px;
+    background-position-y: -1008px; }
+  .i-i.c_up_spark {
+    background-position-x: 0px;
+    background-position-y: -924px; }
+  .i-i.c_up_divine {
+    background-position-x: -42px;
+    background-position-y: -924px; }
+  .i-i.c_trap_snare {
+    background-position-x: -84px;
+    background-position-y: -924px; }
+  .i-i.c_trap_venom {
+    background-position-x: -126px;
+    background-position-y: -924px; }
+  .i-i.c_trap_bind {
+    background-position-x: -168px;
+    background-position-y: -924px; }
+  .i-i.c_mine_short {
+    background-position-x: -210px;
+    background-position-y: -924px; }
+  .i-i.c_mine_long {
+    background-position-x: -252px;
+    background-position-y: -924px; }
+  .i-i.o_unknown {
+    background-position-x: 0px;
+    background-position-y: -1092px; }
+  .i-i.o_fc {
+    background-position-x: -42px;
+    background-position-y: -1092px; }
+  .i-i.o_trade_1 {
+    background-position-x: -84px;
+    background-position-y: -1092px; }
+  .i-i.o_trade_2 {
+    background-position-x: -126px;
+    background-position-y: -1092px; }
+  .i-i.o_upgrade_melee {
+    background-position-x: -168px;
+    background-position-y: -1092px; }
+  .i-i.o_upgrade_gun {
+    background-position-x: -210px;
+    background-position-y: -1092px; }
+  .i-i.o_upgrade_shield {
+    background-position-x: -252px;
+    background-position-y: -1092px; }
+  .i-i.r1 {
+    background-position-x: 0px; }
+  .i-i.r2 {
+    background-position-x: -42px; }
+  .i-i.r3 {
+    background-position-x: -84px; }
+  .i-i.r4 {
+    background-position-x: -126px; }
+  .i-i.r5 {
+    background-position-x: -168px; }
+  .i-i.r6 {
+    background-position-x: -210px; }
+  .i-i.r7 {
+    background-position-x: -252px; }
+
+.i-a-container {
+  width: 228px;
+  height: 228px;
+  max-width: 228px;
+  max-height: 228px; }
+
+.i-a {
+  display: block;
+  background-image: url("../images/aragami.png"); }
+  .i-a-s {
+    width: 180px;
+    height: 110px; }
+  .i-a-l {
+    width: 228px;
+    height: 228px; }
+  .i-a.axe_raider {
+    background-position-x: 0px;
+    background-position-y: 0px; }
+  .i-a.fallen_axe_raider {
+    background-position-x: -180px;
+    background-position-y: 0px; }
+  .i-a.blast_spider {
+    background-position-x: -360px;
+    background-position-y: 0px; }
+  .i-a.fallen_blast_spider {
+    background-position-x: -540px;
+    background-position-y: 0px; }
+  .i-a.ogretail {
+    background-position-x: -720px;
+    background-position-y: 0px; }
+  .i-a.zygote {
+    background-position-x: -900px;
+    background-position-y: 0px; }
+  .i-a.cocoon_maiden {
+    background-position-x: -1080px;
+    background-position-y: 0px; }
+  .i-a.dreadpike {
+    background-position-x: -1260px;
+    background-position-y: 0px; }
+  .i-a.barbarius {
+    background-position-x: 0px;
+    background-position-y: -110px; }
+  .i-a.fallen_barbarius {
+    background-position-x: -228px;
+    background-position-y: -110px; }
+  .i-a.nemain {
+    background-position-x: -456px;
+    background-position-y: -110px; }
+  .i-a.fallen_nemain {
+    background-position-x: -684px;
+    background-position-y: -110px; }
+  .i-a.havakiri {
+    background-position-x: -912px;
+    background-position-y: -110px; }
+  .i-a.fallen_havakiri {
+    background-position-x: -1140px;
+    background-position-y: -110px; }
+  .i-a.false_idol {
+    background-position-x: -1368px;
+    background-position-y: -110px; }
+  .i-a.fallen_false_idol {
+    background-position-x: -1596px;
+    background-position-y: -110px; }
+  .i-a.kongou {
+    background-position-x: -1824px;
+    background-position-y: -110px; }
+  .i-a.chi_you {
+    background-position-x: -2052px;
+    background-position-y: -110px; }
+  .i-a.gboro_gboro {
+    background-position-x: -2280px;
+    background-position-y: -110px; }
+  .i-a.ukonvasara {
+    background-position-x: -2508px;
+    background-position-y: -110px; }
+  .i-a.vajira {
+    background-position-x: 0px;
+    background-position-y: -338px; }
+  .i-a.dyaus_pita {
+    background-position-x: -228px;
+    background-position-y: -338px; }
+  .i-a.borg_camlann {
+    background-position-x: -456px;
+    background-position-y: -338px; }
+  .i-a.kyuubi {
+    background-position-x: -684px;
+    background-position-y: -338px; }
+  .i-a.sariel {
+    background-position-x: -912px;
+    background-position-y: -338px; }
+  .i-a.chrome_gawain {
+    background-position-x: -1140px;
+    background-position-y: -338px; }
+  .i-a.hanibal {
+    background-position-x: -1368px;
+    background-position-y: -338px; }
+  .i-a.caligula {
+    background-position-x: -1596px;
+    background-position-y: -338px; }
+  .i-a.quadriga {
+    background-position-x: -1824px;
+    background-position-y: -338px; }
+  .i-a.marduk {
+    background-position-x: -2052px;
+    background-position-y: -338px; }
+  .i-a.ra {
+    background-position-x: 0px;
+    background-position-y: -566px; }
+  .i-a.nuadha {
+    background-position-x: -228px;
+    background-position-y: -566px; }
+  .i-a.balmung {
+    background-position-x: -456px;
+    background-position-y: -566px; }
+  .i-a.anubis {
+    background-position-x: -684px;
+    background-position-y: -566px; }
+  .i-a.dromi {
+    background-position-x: -912px;
+    background-position-y: -566px; }
+  .i-a.glacial_ra {
+    background-position-x: 0px;
+    background-position-y: -794px; }
+  .i-a.namhaid_nuadha {
+    background-position-x: -228px;
+    background-position-y: -794px; }
+  .i-a.svartr_balmung {
+    background-position-x: -456px;
+    background-position-y: -794px; }
+  .i-a.grim_anubis {
+    background-position-x: -684px;
+    background-position-y: -794px; }
+  .i-a.foul_dromi {
+    background-position-x: -912px;
+    background-position-y: -794px; }
+  .i-a.unknown {
+    background-position-x: 0px;
+    background-position-y: -794px; }
+
+.attr {
+  background-image: url("../images/attributes.png");
+  display: inline-block;
+  width: 22px;
+  height: 22px; }
+  .attr.slash {
+    background-position-x: 0px;
+    background-position-y: -22px; }
+  .attr.crush {
+    background-position-x: -22px;
+    background-position-y: -22px; }
+  .attr.pierce {
+    background-position-x: -44px;
+    background-position-y: -22px; }
+  .attr.blaze {
+    background-position-x: -66px;
+    background-position-y: -22px; }
+  .attr.freeze {
+    background-position-x: -88px;
+    background-position-y: -22px; }
+  .attr.spark {
+    background-position-x: -110px;
+    background-position-y: -22px; }
+  .attr.divine {
+    background-position-x: -132px;
+    background-position-y: -22px; }
+  .attr.bond {
+    background-position-x: 0px;
+    background-position-y: -44px; }
+  .attr.bond-b {
+    background-position-x: -22px;
+    background-position-y: -44px; }
+  .attr.strong {
+    background-position-x: -44px;
+    background-position-y: -44px; }
+  .attr.weak {
+    background-position-x: -66px;
+    background-position-y: -44px; }
+  .attr.neutral {
+    background-position-x: -88px;
+    background-position-y: -44px; }
+
+.aragami-card-size {
+  width: 456px;
+  min-width: 456px;
+  max-width: 456px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>God Eater 3 - Guide</title>
+
+	<link rel="stylesheet" href="resources/css/bootstrap.css">
+	<link rel="stylesheet" href="resources/css/styles.css">
+
+	<script src="resources/vendor/jquery-3.3.1/jquery.min.js"></script>
+	<script src="resources/vendor/bootstrap-4.1.3/bootstrap.min.js"></script>
+	<script src="resources/vendor/knockout-3.5.0/knockout.js"></script>
+</head>
+<body>
+	<script type="text/html" id="tpl-aragami">
+		<!-- ko if: $index() > 0 && $parent.aragami()[$index() - 1].type !== type -->
+		<div class="w-100"></div>
+		<!-- /ko -->
+		<div class="col aragami-card-size p-1">
+			<div class="card bg-dark text-white">
+				<div class="card-body p-1">
+					<div class="row">
+						<div class="col i-a-container mr-1">
+							<i data-bind="class: imgClass"></i>
+						</div>
+						<div class="col">
+							<h4><span class="badge badge-primary" data-bind="text:type"></span></h4>
+							<div>
+								<b>
+									<span class="d-inline-block" style="height: 22px">Element</span>
+									<i class="attr blaze" data-bind="visible: element.blaze"></i>
+									<i class="attr freeze" data-bind="visible: element.freeze"></i>
+									<i class="attr spark" data-bind="visible: element.spark"></i>
+									<i class="attr divine" data-bind="visible: element.divine"></i>
+								</b>
+							</div>
+							<div>
+								<b>
+									Drops
+									<!-- ko foreach: drop_prefixes -->
+									<span class="badge badge-light" data-bind="text:$data"></span>
+									<!-- /ko -->
+								</b>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="card-body p-1" data-bind="if: bonds[0].part !== ''">
+					<h3>Breakable Bonds</h3>
+					<div class="row" data-bind="foreach: bonds">
+						<div class="col">
+							<table class="w-100 table-hover">
+								<thead>
+								<tr>
+									<th colspan="3">
+											<span class="btn btn-sm btn-block btn-danger" data-toggle="collapse" data-target="" data-bind="attr:{'data-target':'#'+$parent.bondCollapseId}">
+												<b data-bind="text:part"></b>
+											</span>
+									</th>
+								</tr>
+								</thead>
+								<tbody id="" class="collapse in" data-bind="attr:{id:$parent.bondCollapseId}">
+								<tr>
+									<!-- ko if: $index() < 1 -->
+									<th style="width: 22px;"></th>
+									<!-- /ko -->
+									<th><i class="attr bond"></i></th>
+									<th><i class="attr bond-b"></i></th>
+								</tr>
+								<tr>
+									<!-- ko if: $index() < 1 -->
+									<td><i class="attr slash"></i></td>
+									<!-- /ko -->
+									<td data-bind="text:def.normal.slash"></td>
+									<td data-bind="text:def.broken.slash"></td>
+								</tr>
+								<tr>
+									<!-- ko if: $index() < 1 -->
+									<td><i class="attr crush"></i></td>
+									<!-- /ko -->
+									<td data-bind="text:def.normal.crush"></td>
+									<td data-bind="text:def.broken.crush"></td>
+								</tr>
+								<tr>
+									<!-- ko if: $index() < 1 -->
+									<td><i class="attr pierce"></i></td>
+									<!-- /ko -->
+									<td data-bind="text:def.normal.pierce"></td>
+									<td data-bind="text:def.broken.pierce"></td>
+								</tr>
+								<tr>
+									<!-- ko if: $index() < 1 -->
+									<td><i class="attr blaze"></i></td>
+									<!-- /ko -->
+									<td data-bind="text:def.normal.blaze"></td>
+									<td data-bind="text:def.broken.blaze"></td>
+								</tr>
+								<tr>
+									<!-- ko if: $index() < 1 -->
+									<td><i class="attr freeze"></i></td>
+									<!-- /ko -->
+									<td data-bind="text:def.normal.freeze"></td>
+									<td data-bind="text:def.broken.freeze"></td>
+								</tr>
+								<tr>
+									<!-- ko if: $index() < 1 -->
+									<td><i class="attr spark"></i></td>
+									<!-- /ko -->
+									<td data-bind="text:def.normal.spark"></td>
+									<td data-bind="text:def.broken.spark"></td>
+								</tr>
+								<tr>
+									<!-- ko if: $index() < 1 -->
+									<td><i class="attr divine"></i></td>
+									<!-- /ko -->
+									<td data-bind="text:def.normal.divine"></td>
+									<td data-bind="text:def.broken.divine"></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
+	<div class="container-fluid">
+		<div class="row justify-content-center" data-bind="template: { name: 'tpl-aragami', foreach: aragami }"></div>
+	</div>
+	<script type="module" src="resources/js/init.js"></script>
+</body>
+</html>
