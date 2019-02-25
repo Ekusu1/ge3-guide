@@ -41,11 +41,11 @@ export function RootViewModel(data) {
 
 	self.def2icon = function (def) {
 		var html = {
-			"2": '<i class="attr strong d-block float-left"></i><i class="attr strong d-block float-right"></i>',
-			"1": '<i class="attr strong d-block m-auto"></i>',
+			"2": '<i class="attr weak d-block float-left"></i><i class="attr weak d-block float-right"></i>',
+			"1": '<i class="attr weak d-block m-auto"></i>',
 			"0":  '<i class="attr neutral d-block m-auto"></i>',
-			"-1": '<i class="attr weak d-block m-auto"></i>',
-			"-2": '<i class="attr weak d-block float-left"></i><i class="attr weak d-block float-right"></i>',
+			"-1": '<i class="attr strong d-block m-auto"></i>',
+			"-2": '<i class="attr strong d-block float-left"></i><i class="attr strong d-block float-right"></i>',
 		}[def];
 		return '<div class="def">'+html+'</div>';
 	}
