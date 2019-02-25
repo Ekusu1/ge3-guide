@@ -1,5 +1,27 @@
 head, body {
-  background-color: #000000; }
+  background-color: #000000;
+  min-width: 468px; }
+
+.o-25 {
+  opacity: .25; }
+.o-50 {
+  opacity: .5; }
+.o-75 {
+  opacity: .75; }
+.o-100 {
+  opacity: 1; }
+
+.c-grayscale {
+  filter: grayscale(1); }
+
+.bg-blaze {
+  background-color: #C04A3C !important; }
+.bg-freeze {
+  background-color: #6B859F !important; }
+.bg-spark {
+  background-color: #A78B47 !important; }
+.bg-divine {
+  background-color: #794C8F !important; }
 
 .i-i {
   display: block;
@@ -373,9 +395,84 @@ head, body {
     background-position-x: -88px;
     background-position-y: -44px; }
 
+nav {
+  box-shadow: 0 0 5px 4px #000000; }
+
+th .attr {
+  display: block;
+  margin: 0 auto; }
+
+.def {
+  margin: 0 auto;
+  width: 44px;
+  height: 22px; }
+
 .aragami-card-size {
   width: 456px;
   min-width: 456px;
   max-width: 456px; }
+
+.table-bond {
+  width: 100%; }
+  .table-bond thead tr th, .table-bond thead tr td, .table-bond tbody tr th, .table-bond tbody tr td {
+    height: 25px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #FFFFFF; }
+    .table-bond thead tr th:first-child, .table-bond thead tr td:first-child, .table-bond tbody tr th:first-child, .table-bond tbody tr td:first-child {
+      text-align: left; }
+  .table-bond thead tr:first-child th:nth-child(1) {
+    padding: 5px;
+    border-right: none; }
+  .table-bond thead tr:first-child th:nth-child(2) {
+    width: 22px;
+    border-left: none; }
+  .table-bond thead tr:first-child th:nth-child(2), .table-bond thead tr:first-child th:nth-child(3), .table-bond thead tr:first-child th:nth-child(4) {
+    border-right: 3px solid #FFFFFF; }
+  .table-bond thead tr:last-child th:nth-child(1), .table-bond thead tr:last-child th:nth-child(2), .table-bond thead tr:last-child th:nth-child(3), .table-bond thead tr:last-child th:nth-child(4), .table-bond thead tr:last-child th:nth-child(5) {
+    width: 22px;
+    background-color: #A6BEBD; }
+  .table-bond thead tr:last-child th:nth-child(6), .table-bond thead tr:last-child th:nth-child(7), .table-bond thead tr:last-child th:nth-child(8), .table-bond thead tr:last-child th:nth-child(9) {
+    width: 46px; }
+  .table-bond thead tr:last-child th:nth-child(2), .table-bond thead tr:last-child th:nth-child(5) {
+    border-right: 3px solid #FFFFFF; }
+  .table-bond tbody {
+    border-top: 3px solid #FFFFFF; }
+    .table-bond tbody tr th {
+      border-right: none;
+      font-weight: normal;
+      padding: 0 5px; }
+      .table-bond tbody tr th .badge {
+        white-space: normal; }
+    .table-bond tbody tr td:nth-of-type(1) {
+      border-left: none; }
+    .table-bond tbody tr td:nth-of-type(1), .table-bond tbody tr td:nth-of-type(3), .table-bond tbody tr td:nth-of-type(6) {
+      border-right: 3px solid #FFFFFF; }
+
+.card-aragami.aragami-small {
+  background-color: #276b30 !important; }
+  .card-aragami.aragami-small .badge-aragami-type {
+    background-color: #276b30 !important; }
+.card-aragami.aragami-mid {
+  background-color: #675630 !important; }
+  .card-aragami.aragami-mid .badge-aragami-type {
+    background-color: #675630 !important; }
+.card-aragami.aragami-large {
+  background-color: #672c30 !important; }
+  .card-aragami.aragami-large .badge-aragami-type {
+    background-color: #672c30 !important; }
+.card-aragami.aragami-ash {
+  background-color: #3c2c45 !important; }
+  .card-aragami.aragami-ash .badge-aragami-type {
+    background-color: #3c2c45 !important; }
+.card-aragami.aragami-adaptive {
+  background-color: #672c70 !important; }
+  .card-aragami.aragami-adaptive .badge-aragami-type {
+    background-color: #672c70 !important; }
+.card-aragami .badge-aragami-type {
+  opacity: .5; }
+.card-aragami:hover .badge-aragami-type {
+  opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */

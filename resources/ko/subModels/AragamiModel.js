@@ -59,13 +59,25 @@ export function AragamiModel(data = {
 }) {
 	var self = this;
 
+	const TYPE_SMALL = 'Small Aragami';
+	const TYPE_MID = 'Mid-size Aragami';
+	const TYPE_LARGE = 'Large Aragami';
+	const TYPE_ASH = 'Ash Aragami';
+	const TYPE_ADAPTIVE = 'Adaptive Aragami';
+
 	self.os = data.os;
 	self.name = data.name;
 	self.type = data.type;
+
 	var nameId = self.name.replace(/-|\s/g, "_").toLowerCase();
-	var imageSize = self.type === "Small Aragami" ? "s" : "l";
-	self.imgClass = "i-a i-a-" + imageSize + " " + nameId;
-	self.bondCollapseId = "bonds-" + nameId;
+	self.typeClass = 'aragami-'+({
+		[TYPE_SMALL]: "small",
+		[TYPE_MID]: "mid",
+		[TYPE_LARGE]: "large",
+		[TYPE_ASH]: "ash",
+		[TYPE_ADAPTIVE]: "adaptive",
+	}[self.type]);
+	self.imgClass = "i-a i-a-" + (self.type === TYPE_SMALL ? "s" : "l") + " " + nameId;
 
 	self.element = {
 		blaze: data.e_b,
