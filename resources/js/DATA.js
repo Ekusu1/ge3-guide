@@ -592,7 +592,7 @@ var DATA = {
 		"p_s": 0,
 		"p_d": -1,
 		"drop_prefix": "Oreb | Corvid",
-		"b1": "Head(Wings)",
+		"b1": "Head (Wings)",
 		"b1_p_sl": 0,
 		"b1_p_cr": 0,
 		"b1_p_pi": 0,

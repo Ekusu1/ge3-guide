@@ -30,7 +30,7 @@
 							</i>
 						</div>
 						<div class="col">
-							<table class="w-100">
+							<table style="width: 184px;">
 								<tr><th colspan="4">Element</th></tr>
 								<tr>
 									<th data-bind="css: {'o-25': !element.blaze,'c-grayscale': !element.blaze}" class="bg-blaze"><i class="attr blaze"></i></th>
@@ -39,7 +39,7 @@
 									<th data-bind="css: {'o-25': !element.divine,'c-grayscale': !element.divine}" class="bg-divine"><i class="attr divine"></i></th>
 								</tr>
 
-								<tr><th colspan="4">Weaknesses / Resitances</th></tr>
+								<tr><th colspan="4">Weak / Resit</th></tr>
 								<tr>
 									<th class="bg-blaze"><i class="attr blaze"></i></th>
 									<th class="bg-freeze"><i class="attr freeze"></i></th>
@@ -99,9 +99,7 @@
 							<!-- ko foreach: bonds -->
 							<tbody>
 								<tr>
-									<th rowspan="2">
-										<h5><span class="badge badge-danger" data-bind="text: part"></span></h5>
-									</th>
+									<th rowspan="2" class="bg-danger"><b data-bind="text: part"></b></th>
 									<td><i class="attr bond d-block"></i></td>
 									<td>0</td>
 									<td>0</td>
