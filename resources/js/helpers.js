@@ -5,11 +5,11 @@ function Helpers () {
 	self.loader = function (state) {
 		if (state) {
 			loadingCount++;
-			$loader.show();
+			$loader.fadeIn(500);
 		} else {
 			loadingCount--;
 			if (loadingCount < 1) {
-				$loader.hide();
+				$loader.fadeOut(1000);
 			}
 		}
 	};

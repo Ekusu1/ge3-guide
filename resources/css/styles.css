@@ -383,7 +383,7 @@ head, body {
   background-color: rgba(38, 38, 38, 0.51);
   background-image: url("../images/loading.gif");
   background-position: bottom right;
-  background-size: 100%;
+  background-size: cover;
   opacity: .5; }
 
 .aragami-card-size {
