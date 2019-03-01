@@ -10,7 +10,7 @@ export function RootViewModel(data) {
 
 	self.options = {
 		aragami: {
-			compact: ko.observable(true)
+			compact: ko.observable(false)
 		}
 	};
 
@@ -33,20 +33,29 @@ export function RootViewModel(data) {
 					searchValues.some(searchValue =>
 							['name', 'drop_prefixes'].some(key =>
 								baseSearchFunction(data[key], searchValue))));
-		console.log(res);
 		return res;
 	});
 
-	console.log('loaded RootViewModel', self.aragamiFiltered());
+	// console.log('loaded RootViewModel', self.aragamiFiltered());
 
-	self.def2icon = function (def) {
+	self.defPhysical = function (def) {
+		def = ""+def;
+		if (def === '') return '';
+		var match = def.match(/(\d*)(!)?/);
+		var value = match[1];
+		var crit = match[2] ? 'class="text-danger"' : '';
+		return `<span ${crit}>${value}</span>`;
+	};
+	self.def2icon = function (def, reverse = true) {
+		var classWeak = reverse ? 'strong' : 'weak';
+		var classStrong = reverse ? 'weak' : 'strong';
 		var html = {
-			"2": '<i class="attr weak d-block float-left"></i><i class="attr weak d-block float-right"></i>',
-			"1": '<i class="attr weak d-block m-auto"></i>',
-			"0":  '<i class="attr neutral d-block m-auto"></i>',
-			"-1": '<i class="attr strong d-block m-auto"></i>',
-			"-2": '<i class="attr strong d-block float-left"></i><i class="attr strong d-block float-right"></i>',
-		}[def];
+			"2": `<i class="attr ${classStrong} d-block float-left"></i><i class="attr ${classStrong} d-block float-right"></i>`,
+			"1": `<i class="attr ${classStrong} d-block m-auto"></i>`,
+			"0":  `<i class="attr neutral d-block m-auto"></i>`,
+			"-1": `<i class="attr ${classWeak} d-block m-auto"></i>`,
+			"-2": `<i class="attr ${classWeak} d-block float-left"></i><i class="attr ${classWeak} d-block float-right"></i>`,
+		}[def] || def;
 		return '<div class="def">'+html+'</div>';
 	}
 }

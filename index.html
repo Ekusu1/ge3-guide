@@ -12,125 +12,10 @@
 	<script src="resources/vendor/jquery-3.3.1/jquery.min.js"></script>
 	<script src="resources/vendor/bootstrap-4.1.3/bootstrap.min.js"></script>
 	<script src="resources/vendor/knockout-3.5.0/knockout.js"></script>
+	<script src="resources/vendor/tabletop-1.5.3/tabletop.min.js"></script>
 </head>
 <body>
-	<script type="text/html" id="tpl-aragami">
-		<!-- ko if: $index() > 0 && $root.aragamiFiltered()[$index() - 1].type !== type -->
-		<div class="w-100"></div>
-		<!-- /ko -->
-		<div class="col aragami-card-size p-1 text-white">
-			<div class="card card-aragami" data-bind="class: typeClass">
-				<div class="card-body p-1">
-					<div class="row">
-						<div class="col i-a-container mr-1">
-							<i data-bind="class: imgClass">
-								<h5 class="ml-1">
-									<span class="badge badge-aragami-type" data-bind="text:type"></span>
-								</h5>
-							</i>
-						</div>
-						<div class="col">
-							<table style="width: 184px;">
-								<tr><th colspan="4">Element</th></tr>
-								<tr>
-									<th data-bind="css: {'o-25': !element.blaze,'c-grayscale': !element.blaze}" class="bg-blaze"><i class="attr blaze"></i></th>
-									<th data-bind="css: {'o-25': !element.freeze,'c-grayscale': !element.freeze}" class="bg-freeze"><i class="attr freeze"></i></th>
-									<th data-bind="css: {'o-25': !element.spark,'c-grayscale': !element.spark}" class="bg-spark"><i class="attr spark"></i></th>
-									<th data-bind="css: {'o-25': !element.divine,'c-grayscale': !element.divine}" class="bg-divine"><i class="attr divine"></i></th>
-								</tr>
-
-								<tr><th colspan="4">Weak / Resit</th></tr>
-								<tr>
-									<th class="bg-blaze"><i class="attr blaze"></i></th>
-									<th class="bg-freeze"><i class="attr freeze"></i></th>
-									<th class="bg-spark"><i class="attr spark"></i></th>
-									<th class="bg-divine"><i class="attr divine"></i></th>
-								</tr>
-								<tr>
-									<td data-bind="html:$root.def2icon(def.blaze)"></td>
-									<td data-bind="html:$root.def2icon(def.freeze)"></td>
-									<td data-bind="html:$root.def2icon(def.spark)"></td>
-									<td data-bind="html:$root.def2icon(def.divine)"></td>
-								</tr>
-
-								<tr><th colspan="4">Drops</th></tr>
-								<tr>
-									<td colspan="4"><h5 class="m-0" data-bind="foreach: drop_prefixes">
-										<span class="badge badge-light" data-bind="text:$data"></span>
-									</h5></td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="card-body p-1 mt-1" data-bind="if: bonds[0].part !== ''">
-					<div class="row align-items-center">
-						<h4 class="col-auto">Bonds</h4>
-						<!-- ko if: $root.options.aragami.compact() -->
-							<!-- ko foreach: bonds -->
-							<h5 class="col-auto p-1">
-								<span class="badge badge-danger" data-bind="text: part"></span>
-							</h5>
-							<!-- /ko -->
-						<!-- /ko -->
-					</div>
-					<div data-bind="if: !$root.options.aragami.compact()">
-						<table class="table-bond">
-							<thead>
-								<tr>
-									<th rowspan="2">Part</th>
-									<th rowspan="2" style="width: 22px"></th>
-									<th colspan="2">Gun</th>
-									<th colspan="3">Meele</th>
-									<th colspan="4">Element</th>
-								</tr>
-								<tr>
-									<th><i class="attr crush d-block m-auto"></i></th>
-									<th><i class="attr pierce d-block m-auto"></i></th>
-									<th><i class="attr slash d-block m-auto"></i></th>
-									<th><i class="attr crush d-block m-auto"></i></th>
-									<th><i class="attr pierce d-block m-auto"></i></th>
-									<th class="bg-blaze"><i class="attr blaze d-block m-auto"></i></th>
-									<th class="bg-freeze"><i class="attr freeze d-block m-auto"></i></th>
-									<th class="bg-spark"><i class="attr spark d-block m-auto"></i></th>
-									<th class="bg-divine"><i class="attr divine d-block m-auto"></i></th>
-								</tr>
-							</thead>
-							<!-- ko foreach: bonds -->
-							<tbody>
-								<tr>
-									<th rowspan="2" class="bg-danger"><b data-bind="text: part"></b></th>
-									<td><i class="attr bond d-block"></i></td>
-									<td>0</td>
-									<td>0</td>
-									<td data-bind="text:def.normal.slash"></td>
-									<td data-bind="text:def.normal.crush"></td>
-									<td data-bind="text:def.normal.pierce"></td>
-									<td data-bind="html:$root.def2icon(def.normal.blaze)"></td>
-									<td data-bind="html:$root.def2icon(def.normal.freeze)"></td>
-									<td data-bind="html:$root.def2icon(def.normal.spark)"></td>
-									<td data-bind="html:$root.def2icon(def.normal.divine)"></td>
-								</tr>
-								<tr>
-									<td><i class="attr bond-b d-block"></i></td>
-									<td>0</td>
-									<td>0</td>
-									<td data-bind="text:def.broken.slash"></td>
-									<td data-bind="text:def.broken.crush"></td>
-									<td data-bind="text:def.broken.pierce"></td>
-									<td data-bind="html:$root.def2icon(def.broken.blaze)"></td>
-									<td data-bind="html:$root.def2icon(def.broken.freeze)"></td>
-									<td data-bind="html:$root.def2icon(def.broken.spark)"></td>
-									<td data-bind="html:$root.def2icon(def.broken.divine)"></td>
-								</tr>
-							</tbody>
-							<!-- /ko -->
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	</script>
+	<div id="templates"></div>
 	<nav class="navbar navbar-dark bg-dark fixed-top">
 		<div class="input-group input-group-sm">
 			<input class="form-control " type="search" placeholder="Search" aria-label="Search" data-bind="value: search, valueUpdate: 'input'">
@@ -162,5 +47,7 @@
 		<div class="row justify-content-center" data-bind="template: { name: 'tpl-aragami', foreach: aragamiFiltered }"></div>
 	</div>
 	<script type="module" src="resources/js/init.js"></script>
+
+	<div id="loader" style="display: none;"></div>
 </body>
 </html>

@@ -373,6 +373,19 @@
 head, body {
   background-color: #000000; }
 
+#loader {
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(38, 38, 38, 0.51);
+  background-image: url("../images/loading.gif");
+  background-position: bottom right;
+  background-size: 100%;
+  opacity: .5; }
+
 .aragami-card-size {
   width: 440px;
   min-width: 440px;
@@ -391,14 +404,26 @@ head, body {
 .c-grayscale {
   filter: grayscale(1); }
 
+.bg-physical {
+  background-color: #A6BEBD !important; }
+  .bg-physical-half {
+    background-color: rgba(166, 190, 189, 0.75) !important; }
 .bg-blaze {
   background-color: #C04A3C !important; }
+  .bg-blaze-half {
+    background-color: rgba(192, 74, 60, 0.5) !important; }
 .bg-freeze {
   background-color: #6B859F !important; }
+  .bg-freeze-half {
+    background-color: rgba(107, 133, 159, 0.5) !important; }
 .bg-spark {
   background-color: #A78B47 !important; }
+  .bg-spark-half {
+    background-color: rgba(167, 139, 71, 0.5) !important; }
 .bg-divine {
   background-color: #794C8F !important; }
+  .bg-divine-half {
+    background-color: rgba(121, 76, 143, 0.5) !important; }
 
 nav {
   box-shadow: 0 0 5px 4px #000000; }
